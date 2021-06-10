@@ -699,14 +699,14 @@ void step1::Loop(TString inTreeName, TString outTreeName, const BTagCalibrationF
   // ----------------------------------------------------------------------------
 
    // basic cuts
-   float metCut=20;
+   float metCut=80;
    float htCut=500;
    int   nAK8jetsCut=0;
-   float lepPtCut=20.0;
+   float lepPtCut=60.0;
    float elEtaCut=2.1;
    float muEtaCut=2.1;
-   int   njetsCut=4;
-   int   nbjetsCut=2; // events with # of b-tags <nbjetsCut (incl. btag shifts) are removed!
+   int   njetsCut=3;
+   int   nbjetsCut=0; // events with # of b-tags <nbjetsCut (incl. btag shifts) are removed!
    float jetPtCut=30;
    float jetEtaCut=2.4;
    float ak8EtaCut=2.4;

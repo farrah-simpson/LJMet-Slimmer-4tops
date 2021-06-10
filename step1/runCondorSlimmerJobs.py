@@ -307,13 +307,13 @@ for sample in dirList:
     #elif 'TTToSemiLeptonic' in sample: outList = ['HT0Njet0','HT500Njet9']  # comment out for simple run
     elif 'TTTo' in sample: outList = ['Mtt0to700','Mtt700to1000','Mtt1000toInf']
     if 'TuneCP5down' in sample or 'TuneCP5up' in sample or 'hdampDOWN' in sample or 'hdampUP' in sample: outList = ['none']
-    if 'TTTo' in sample or 'TT_Mtt' in sample: 
-    	if outList==['none']: outList = ['ttbb','tt2b','tt1b','ttcc','ttjj']
-    	else:
-    		outList_ = outList[:]
-    		outList = []
-    		for outlabel in outList_:
-    			for flv in ['ttbb','tt2b','tt1b','ttcc','ttjj']: outList.append(outlabel+'_'+flv)
+#    if 'TTTo' in sample or 'TT_Mtt' in sample: 
+#    	if outList==['none']: outList = ['ttbb','tt2b','tt1b','ttcc','ttjj']
+#    	else:
+#    		outList_ = outList[:]
+#    		outList = []
+#    		for outlabel in outList_:
+#    			for flv in ['ttbb','tt2b','tt1b','ttcc','ttjj']: outList.append(outlabel+'_'+flv)
 
     isData = False
     if 'Single' in sample or 'EGamma' in sample or 'JetHT' in sample: isData = True
