@@ -703,8 +703,8 @@ void step1::Loop(TString inTreeName, TString outTreeName, const BTagCalibrationF
    float htCut=500;
    int   nAK8jetsCut=0;
    float lepPtCut=60.0;
-   float elEtaCut=2.1;
-   float muEtaCut=2.1;
+   float elEtaCut=2.5;
+   float muEtaCut=2.4;
    int   njetsCut=3;
    int   nbjetsCut=0; // events with # of b-tags <nbjetsCut (incl. btag shifts) are removed!
    float jetPtCut=30;
